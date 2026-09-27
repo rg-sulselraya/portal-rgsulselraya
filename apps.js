@@ -39,8 +39,8 @@ window.portalApps = [
   {
     name: "Dashboard Activity Planner",
     description: "Perencanaan dan monitoring aktivitas",
-    url: null,
-    status: "coming-soon",
+    url: "https://rg-sulselraya.github.io/FU-Planner/",
+    status: "active",
     category: "Planning",
     icon: "calendar",
     accent: "pink"
