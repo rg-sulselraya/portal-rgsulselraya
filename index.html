@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta name="description" content="One portal for Ruangguru Sulsel Raya digital applications." />
+    <title>Ruangguru Sulsel Raya · Digital Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="apps.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" aria-label="Portal header">
+        <a class="brand" href="./" aria-label="Ruangguru Sulsel Raya home">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span class="brand-copy">
+            <span class="brand-name">Ruangguru Sulsel Raya</span>
+            <span class="brand-subtitle">Digital Portal</span>
+          </span>
+        </a>
+        <div class="header-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>All systems ready</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span>YOUR DIGITAL WORKSPACE</p>
+            <h1 id="page-title">Everything you need,<br /><em>one click away.</em></h1>
+            <p class="hero-description">One portal for Ruangguru Sulsel Raya digital applications.</p>
+          </div>
+          <div class="hero-orbit" aria-hidden="true">
+            <div class="orbit-ring orbit-ring-one"></div>
+            <div class="orbit-ring orbit-ring-two"></div>
+            <div class="orbit-core"><span>RG</span></div>
+            <span class="orbit-dot orbit-dot-one"></span>
+            <span class="orbit-dot orbit-dot-two"></span>
+            <span class="orbit-dot orbit-dot-three"></span>
+          </div>
+        </section>
+
+        <section class="toolbar" aria-label="Application tools">
+          <div class="section-intro">
+            <div>
+              <p class="section-kicker">APPLICATIONS</p>
+              <h2>Launchpad <span id="app-count">06</span></h2>
+            </div>
+            <p class="section-note">Quick access to your regional tools</p>
+          </div>
+          <label class="search-wrap" for="app-search">
+            <span class="search-icon" aria-hidden="true"></span>
+            <input id="app-search" type="search" placeholder="Search applications..." autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+        </section>
+
+        <section class="apps-grid" id="apps-grid" aria-live="polite" aria-label="Applications"></section>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-icon" aria-hidden="true">⌕</span>
+          <h3>No applications found</h3>
+          <p>Try a different name, description, or category.</p>
+        </div>
+        <p class="card-message" id="card-message" role="status" aria-live="polite"></p>
+      </main>
+
+      <footer class="site-footer">
+        <span>© 2026 Ruangguru Sulsel Raya</span>
+        <span class="footer-divider" aria-hidden="true"></span>
+        <span>Built for focus, made for flow.</span>
+      </footer>
+    </div>
+  </body>
+</html>
